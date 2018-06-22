@@ -8,4 +8,5 @@ operation in place with no other auxiliary structure).
 Example:
 
 Input: “User is not allowed “, 19
+
 Output: “User&32is&32not&32allowed”
