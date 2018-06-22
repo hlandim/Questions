@@ -23,9 +23,9 @@ partial-permutation only if:
 - The first letter hasn’t changed place
 - If word has more than 3 letters, up to 2/3 of the letters have changed place
 
-Examples:
-you, yuo -> true
-probably, porbalby -> true
-despite, desptie -> true
-moon, nmoo -> false
+Examples:  
+you, yuo -> true  
+probably, porbalby -> true  
+despite, desptie -> true  
+moon, nmoo -> false  
 misspellings, mpeissngslli -> false
