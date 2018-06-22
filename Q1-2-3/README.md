@@ -9,7 +9,7 @@ Example:
 Input: “User is not allowed “, 19  
 Output: “User&32is&32not&32allowed”
 
-Solution: [here](https://github.com/hlandim/Questions/blob/master/Q1/src/FirstQuestion.kt)
+Solution: [here](src/FirstQuestion.kt)
 
 ## 2. Check words with jumbled letters:
 
@@ -27,3 +27,5 @@ probably, porbalby -> true
 despite, desptie -> true  
 moon, nmoo -> false  
 misspellings, mpeissngslli -> false
+
+Solution: [here](src/SecondQuestion.kt)
