@@ -6,7 +6,7 @@ fun main(args: Array<String>) {
 
     val string = "User is not allowed      ".toCharArray()
 
-    replaceWithSpace(string)
+    replaceWhiteSpace(string)
 
     println(string)
 
@@ -15,7 +15,7 @@ fun main(args: Array<String>) {
 
 }
 
-private fun replaceWithSpace(string: CharArray) {
+private fun replaceWhiteSpace(string: CharArray) {
     while (string.contains(' ')) {
         val withSpaceIndex = string.indexOf(' ')
         val lastLetterIndex = string.indexOfLast { v -> v != ' ' }
