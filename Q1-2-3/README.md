@@ -10,3 +10,5 @@ Example:
 Input: “User is not allowed “, 19
 
 Output: “User&32is&32not&32allowed”
+
+Solution: [here](https://github.com/hlandim/Questions/blob/master/Q1/src/FirstQuestion.kt)
