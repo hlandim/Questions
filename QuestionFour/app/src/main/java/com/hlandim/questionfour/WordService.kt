@@ -7,7 +7,7 @@ class WordService {
             , "stock", "whole", "morsel", "bomber", "difficult", "clean", "absorb", "peak", "pig"
             , "jury", "step", "coach", "applied", "disappear", "spite", "undress", "linen", "nursery"
             , "cutting", "position", "dealer", "tone", "bell", "negligence", "recovery", "ridge"
-            , "enter", "win", "duty", "learn", "jungle", "incredible", "interest", "beef", "funny"
+            , "enter", "win", "winne", "duty", "learn", "jungle", "incredible", "interest", "beef", "funny"
             , "goal", "photocopy", "nerve", "stitch", "cherry", "president", "crowd", "fountain"
             , "customer", "facility", "free", "nationalism", "climb", "contrast", "shower", "rape"
             , "pair", "monopoly", "glance", "cunning", "culture", "economics", "bundle", "bland"
@@ -15,7 +15,7 @@ class WordService {
             , "space", "circulate", "cattle", "shark", "wreck", "remedy", "crevice", "moving"
             , "distinct", "radio", "inject", "white", "snail", "grant", "percent", "mist", "ritual"
             , "difference", "administration", "quality", "judicial", "mushroom", "insurance", "stay"
-            , "farewell", "pension")
+            , "farewell", "pension", "bet", "beat", "bat")
 
 
     fun getWords(query: String) = wordList.filter { validateWord(query, it) }
@@ -23,6 +23,8 @@ class WordService {
     fun getAll() = wordList
 
     private fun validateWord(query: String, word: String): Boolean {
+
+        if (query == word) return true
 
         var count = 0
         if (isPartialPermutation(query, word)) {
