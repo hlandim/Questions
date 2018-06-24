@@ -9,7 +9,6 @@ fun main(args: Array<String>) {
     checkPartialPermutation("despite", "desptie")
     checkPartialPermutation("moon", "nmoo")
     checkPartialPermutation("misspellings", "mpeissngslli")
-    checkPartialPermutation("misspellings", "mpeissngslli")
 
 }
 
@@ -30,8 +29,16 @@ fun isPartialPermutation(first: String, second: String): Boolean {
 
             var diffLettersCount = 0
 
-            first.forEachIndexed { index, c ->
-                if (second[index] != c) {
+            if (first[0] != second[0]) {
+                return false
+            }
+
+            second.forEachIndexed { index, c ->
+                val indexFirst = first.indexOf(c)
+                if (indexFirst == -1) {
+                    return false
+                }
+                if (index != indexFirst) {
                     diffLettersCount++
                 }
             }
