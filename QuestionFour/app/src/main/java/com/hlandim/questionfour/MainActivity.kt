@@ -8,7 +8,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
+import android.widget.AdapterView
 import android.widget.SearchView
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -25,6 +27,10 @@ class MainActivity : AppCompatActivity() {
             updateList(list)
         })
         searchViewModel.getAll()
+        my_list.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
+            val item = my_list.adapter.getItem(position) as String
+            Toast.makeText(this, item, Toast.LENGTH_LONG).show()
+        }
     }
 
     private fun updateList(list: List<String>?) {
