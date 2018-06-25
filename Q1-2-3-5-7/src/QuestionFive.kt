@@ -1,4 +1,4 @@
-
+import java.util.*
 
 /**
  * Created by hlandim on 22/06/18.
@@ -16,10 +16,41 @@ fun main(args: Array<String>) {
     println("List after remove duplicates ${printList(head)}")
 
 
+    var list = LinkedList<String>()
+    list.add("msg-1")
+    list.add("msg-2")
+    list.add("msg-3")
+    list.add("msg-2")
+    list.add("msg-2")
+    list.add("msg-6")
+    list.add("msg-4")
+    list.add("msg-4")
+    list.add("msg-4")
+
+    println(list)
+    list = deleteDuplicates(list)
+    println(list)
+
+
 }
 
 data class Node(val value: String) {
     var next: Node? = null
+}
+
+fun deleteDuplicates(head: LinkedList<String>): LinkedList<String> {
+
+    val hashSet = arrayListOf<String>()
+
+    val iterator = head.iterator()
+    while (iterator.hasNext()) {
+        val value = iterator.next()
+        if (!hashSet.contains(value)) {
+            hashSet.add(value)
+        }
+    }
+    return LinkedList(hashSet)
+
 }
 
 fun deleteDuplicates(head: Node?) {
