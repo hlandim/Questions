@@ -16,7 +16,13 @@ fun main(args: Array<String>) {
     head2.next!!.next!!.next = head1.next!!.next!!.next!!.next
     head2.next!!.next!!.next!!.next = head1.next!!.next!!.next!!.next!!.next
 
-    println("The node of intersection is ${getNode(head1, head2)}")
+    val interSectionNode = getNode(head1, head2)
+
+    if (interSectionNode.isNullOrBlank()) {
+        println("The lists no have intersections")
+    } else {
+        println("The node of intersection is $interSectionNode")
+    }
 }
 
 /**
