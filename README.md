@@ -38,9 +38,9 @@ check if they are one typo (or zero typos) away.
 
 Examples:  
 pale, ple -> true   
-pales, pale -> true  
-pale, bale -> true 
-pale, bake -> false  
+pales, pale -> true    
+pale, bale -> true   
+pale, bake -> false   
 
 Solution: [Here](Q1-2-3-5-7/src/QuestionThree.kt)
 
