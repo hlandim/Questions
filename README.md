@@ -41,6 +41,7 @@ pale, ple -> true
 pales, pale -> true  
 pale, bale -> true 
 pale, bake -> false  
+
 Solution: [Here](Q1-2-3-5-7/src/QuestionThree.kt)
 
 ## 4. [Android] Search on a list:
@@ -69,7 +70,7 @@ apps with an email thread (as a linked-list), applies the previous algorithm and
 returns a cleaner version of same email thread. Concurrent requests should be
 queued.
 
-Solution: [Service app here](Question6/) and [Service app test here](Question6Test/)
+Solution: [Service app](Question6/) and [Service app test](Question6Test/)
 
 ## 7. Linked List Intersection:
 
