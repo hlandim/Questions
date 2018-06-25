@@ -28,7 +28,7 @@ despite, desptie -> true
 moon, nmoo -> false  
 misspellings, mpeissngslli -> false
 
-Solution: [here](Q1-2-3-5-7/src/QuestionTwo.kt)
+Solution: [Here](Q1-2-3-5-7/src/QuestionTwo.kt)
 
 ## 3. Check words with typos:
 
@@ -41,7 +41,7 @@ pale, ple -> true
 pales, pale -> true  
 pale, bale -> true 
 pale, bake -> false  
-Solution: [here](Q1-2-3-5-7/src/QuestionThree.kt)
+Solution: [Here](Q1-2-3-5-7/src/QuestionThree.kt)
 
 ## 4. [Android] Search on a list:
 
@@ -49,9 +49,9 @@ Write an application with one activity that shows a list of items and a search b
 user expects that the search returns a result even if word typed is partially permuted
 or it has one typo (like explained on previous problems), but not both.
 
-Solution: [App Here](QuestionFour/)
+Solution: [App here](QuestionFour/)
 
-### Linked Lists
+# Linked Lists
 
 ## 5. Remove duplicates on email thread:
 
@@ -60,4 +60,25 @@ because old messages are included again and get duplicated. Given a email thread
 (represented by a singly unsorted linked list of messages), write a function that
 remove duplicated messages from it.
 
-Solution: [here](Q1-2-3-5-7/src/QuestionFive.kt)
+Solution: [Here](Q1-2-3-5-7/src/QuestionFive.kt)
+
+## 6. [Android] Email processor service:
+
+Write an application with one service (no activities) that receive requests from other
+apps with an email thread (as a linked-list), applies the previous algorithm and
+returns a cleaner version of same email thread. Concurrent requests should be
+queued.
+
+Solution: [Service app here](Question6/) and [Service app test here](Question6Test/)
+
+## 7. Linked List Intersection:
+
+If two requests on the queue have linked lists that intersect (like the example below),
+previous service could be improved to process only the difference between them.
+Write a method that receives two singly linked lists and return the intersecting node
+of the two lists (if exists). Note that the intersection is defined by reference, not value.
+(No need to change previous answer).
+
+Solution: [Here](Q1-2-3-5-7/src/QuestionSeven.kt)
+
+By: Hugo Landim Santos [LinkeIn](https://www.linkedin.com/in/hlandim/)
