@@ -20,7 +20,7 @@ class EmailProcessorService : Service() {
     }
 
     override fun onBind(intent: Intent): IBinder? {
-        Log.i(TAG, "Service onBind")
+        Log.i(TAG, "Service onBind, appName: ${intent.extras.getString("clientName")}")
         return myMessenger.binder
     }
 
