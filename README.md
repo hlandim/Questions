@@ -31,6 +31,7 @@ misspellings, mpeissngslli -> false
 Solution: [here](Q1-2-3-5-7/src/QuestionTwo.kt)
 
 ## 3. Check words with typos:
+
 There are three types of typos that can be performed on strings: insert a character,
 remove a character, or replace a character. Given two strings, write a function to
 check if they are one typo (or zero typos) away.  
@@ -41,3 +42,10 @@ pales, pale -> true
 pale, bale -> true 
 pale, bake -> false  
 Solution: [here](Q1-2-3-5-7/src/QuestionThree.kt)
+
+## 4. [Android] Search on a list:
+
+Write an application with one activity that shows a list of items and a search box. The
+user expects that the search returns a result even if word typed is partially permuted
+or it has one typo (like explained on previous problems), but not both.
+Solution: [App Here](QuestionFour/)
