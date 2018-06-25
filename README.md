@@ -48,4 +48,16 @@ Solution: [here](Q1-2-3-5-7/src/QuestionThree.kt)
 Write an application with one activity that shows a list of items and a search box. The
 user expects that the search returns a result even if word typed is partially permuted
 or it has one typo (like explained on previous problems), but not both.
+
 Solution: [App Here](QuestionFour/)
+
+### Linked Lists
+
+## 5. Remove duplicates on email thread:
+
+When different email clients are used on a same thread, the discussion get messy
+because old messages are included again and get duplicated. Given a email thread
+(represented by a singly unsorted linked list of messages), write a function that
+remove duplicated messages from it.
+
+Solution: [here](Q1-2-3-5-7/src/QuestionFive.kt)
