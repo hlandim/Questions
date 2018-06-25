@@ -5,52 +5,21 @@ import java.util.*
  */
 fun main(args: Array<String>) {
 
-    val head = Node("msg-1")
-    head.next = Node("msg-2")
-    head.next!!.next = Node("msg-3")
-    head.next!!.next!!.next = Node("msg-2")
-    head.next!!.next!!.next!!.next = Node("msg-4")
-    head.next!!.next!!.next!!.next!!.next = Node("msg-2")
+    val head = Node(1,"msg-1")
+    head.next = Node(2, "msg-2")
+    head.next!!.next = Node(3,"msg-3")
+    head.next!!.next!!.next = Node(4,"msg-2")
+    head.next!!.next!!.next!!.next = Node(5,"msg-4")
+    head.next!!.next!!.next!!.next!!.next = Node(6,"msg-2")
     println("List before remove duplicates ${printList(head)}")
     deleteDuplicates(head)
     println("List after remove duplicates ${printList(head)}")
 
 
-    var list = LinkedList<String>()
-    list.add("msg-1")
-    list.add("msg-2")
-    list.add("msg-3")
-    list.add("msg-2")
-    list.add("msg-2")
-    list.add("msg-6")
-    list.add("msg-4")
-    list.add("msg-4")
-    list.add("msg-4")
-
-    println(list)
-    list = deleteDuplicates(list)
-    println(list)
-
-
 }
 
-data class Node(val value: String) {
+data class Node(val id:Int, val value: String) {
     var next: Node? = null
-}
-
-fun deleteDuplicates(head: LinkedList<String>): LinkedList<String> {
-
-    val hashSet = arrayListOf<String>()
-
-    val iterator = head.iterator()
-    while (iterator.hasNext()) {
-        val value = iterator.next()
-        if (!hashSet.contains(value)) {
-            hashSet.add(value)
-        }
-    }
-    return LinkedList(hashSet)
-
 }
 
 fun deleteDuplicates(head: Node?) {
