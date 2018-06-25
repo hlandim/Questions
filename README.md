@@ -38,7 +38,7 @@ check if they are one typo (or zero typos) away.
 
 Examples:  
 pale, ple -> true   
-pales, pale -> true  
+pales, pale -> true   
 pale, bale -> true 
 pale, bake -> false  
 
